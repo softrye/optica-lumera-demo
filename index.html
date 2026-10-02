@@ -748,12 +748,12 @@ const showcaseCatalogs = {
   sun: {
     title:'Lentes de sol',
     description:'Modelos ficticios de sol con una mezcla de estilos urbanos, clásicos y ligeros para mostrar una colección comercial completa.',
-    items:[1,2,3,4,5,6].map((n,i)=>({code:`SUN-${String(n).padStart(2,'0')}`,name:['Orbita Urban','Velora Weekend','Cirra Tortoise','Niveo City','Albare Round','Mirea Soft Sun'][i],detail:['Negro · lente oscuro','Azul · urbano','Carey · clásico','Negro · cuadrado','Dorado · redondo','Rosa · ligero'][i],price:[179,189,169,199,209,159][i],image:`assets/showcase/sun-${String(n).padStart(2,'0')}.webp`}))
+    items:[1,2,3,4,5,6].map((n,i)=>({code:`SUN-${String(n).padStart(2,'0')}`,name:['Orbita Urban','Velora Weekend','Cirra Tortoise','Niveo City','Albare Round','Mirea Soft Sun'][i],detail:['Negro · lente oscuro','Azul · urbano','Carey · clásico','Negro · cuadrado','Dorado · redondo','Rosa · ligero'][i],price:[179,189,169,199,209,159][i],image:(document.querySelector('[data-showcase-category="sun"] img')?.src || '')}))
   },
   contact: {
     title:'Lentes de contacto',
     description:'Línea ficticia de lentes de contacto organizada por tipo de uso para mostrar cómo se integraría esta categoría en una óptica real.',
-    items:[1,2,3,4,5,6].map((n,i)=>({code:`LC-${String(n).padStart(2,'0')}`,name:['Lumera Daily','Lumera Comfort','Lumera Toric','Lumera Monthly','Lumera Clear+','Lumera Soft Fit'][i],detail:['Uso diario','Confort prolongado','Astigmatismo','Uso mensual','Alta hidratación','Adaptación suave'][i],price:[99,119,149,129,139,119][i],image:`assets/showcase/contact-${String(n).padStart(2,'0')}.webp`}))
+    items:[1,2,3,4,5,6].map((n,i)=>({code:`LC-${String(n).padStart(2,'0')}`,name:['Lumera Daily','Lumera Comfort','Lumera Toric','Lumera Monthly','Lumera Clear+','Lumera Soft Fit'][i],detail:['Uso diario','Confort prolongado','Astigmatismo','Uso mensual','Alta hidratación','Adaptación suave'][i],price:[99,119,149,129,139,119][i],image:(document.querySelector('[data-showcase-category="contact"] img')?.src || '')}))
   },
   sale: {
     title:'Selecciones especiales',
